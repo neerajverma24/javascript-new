@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Way 1 ====================================== -->
+    <h1 style="text-align: center;">This is an onclick event</h1>
+
+    <h2 onclick="this.innerHTML = 'oops! changed'">click on this text..</h2>
+
+    <!-- Way 2 ============================================ -->
+    <h1 onclick="changepara(this)">Click on this line : This paragraph will change by onclick</h1>
+
+    <button>Changed line</button>
+
+    <script>
+        function changepara(id) {
+            id.innerHTML = "Heading change is done by click"
+        }
+        changepara(id);
+    </script>
+</body>
+
+</html>

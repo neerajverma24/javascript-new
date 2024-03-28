@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+</head>
+
+<body>
+    <h2>This example uses addEventListener(), with multiple cases to a single element</h2>
+
+    <button id="myBtn">Try it</button>
+    <p id="myPara"></p>
+
+    <script>
+        let myBtn = document.getElementById('myBtn')
+
+        myBtn.addEventListener("mouseover", function () {
+            document.getElementById('myPara').innerHTML += "MouseOver! <br>"
+        })
+
+        myBtn.addEventListener("mouseout", function () {
+            document.getElementById('myPara').innerHTML += "MouseOut! <br>"
+        })
+
+        myBtn.addEventListener("click", function () {
+            document.getElementById('myPara').innerHTML += "Clicked! <br>"
+        })
+
+    </script>
+</body>
+
+</html>

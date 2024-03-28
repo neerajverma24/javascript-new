@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Mouse Over/Out event</h1>
+    
+    <div onmouseover="getData(this)" style="background: #567543; width: 120px; height : 50px; padding : 50px ;">
+        Mouse over me
+    </div>
+
+
+    <script>
+        function getData(obj) {
+            if (obj.innerHTML === 'Mouse over Me') {
+                obj.innerHTML = 'Thank You'
+            } else {
+                obj.innerHTML = 'Mouse over Me'
+            }
+        }
+    </script>
+
+</body>
+
+</html>

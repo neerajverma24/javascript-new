@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle</title>
+
+    <style>
+        #paragraph {
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="toggleButton">Toggle Para</button>
+    <p id="paragraph">This paragraph is to show/hide</p>
+
+    <script>
+        const toggleButton = document.getElementById('toggleButton')
+        const paragraph = document.getElementById('paragraph')
+
+        console.log(paragraph);
+        toggleButton.addEventListener('click', function () {
+            if (paragraph.style.display === 'none') {     // condition with (===)
+                paragraph.style.display = 'block';   // single (=)
+            } else {
+                paragraph.style.display = 'none';    // single (=)
+            }
+        })
+    </script>
+</body>
+
+</html>

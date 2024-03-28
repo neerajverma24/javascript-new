@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #heading {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">Pushpa</h1>
+    <button id="btn">Change Color to Blue</button>
+
+    <script>
+        const heading = document.getElementById('heading');
+        const btn = document.getElementById('btn')
+
+        // document.getElementById("heading").style.color = 'red'
+
+        btn.addEventListener('click', function () {
+            if (heading.style.color === 'red') {
+                heading.style.color = 'red'
+            } else {
+                heading.style.color = 'blue'
+                alert('You changed the color once only')
+            }
+        })
+
+    </script>
+</body>
+
+</html>
